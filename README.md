@@ -20,6 +20,33 @@ You can click on the GIF to watch the full IT&E minitaur video:
 
 [![](miscs/minitaur.gif)](https://www.youtube.com/watch?v=v90CWJ_HsnM)
 
+## Citing this code
+
+If you use our code for a scientific paper, please cite:
+
+#### For IT&E
+
+Antoine Cully, Jeff Clune, Danesh Tarapore, and Jean-Baptiste Mouret. **"Robots that can adapt like animals."** *Nature 521, no. 7553 (2015): 503-507*.
+
+In BibTex:
+
+    @article{cully_robots_2015,
+        title = {Robots that can adapt like animals},
+        volume = {521},
+        pages = {503--507},
+        number = {7553},
+        journal = {Nature},
+        author = {Cully, Antoine and Clune, Jeff and Tarapore, Danesh and Mouret, Jean-Baptiste},
+        year = {2015}
+    }
+
+#### For CVT-MAP-Elites
+
+**Main paper**: Mouret JB, Clune J. Illuminating search spaces by mapping elites. arXiv preprint arXiv:1504.04909. 2015 Apr 20.
+
+**CVT Map-Elites**: Vassiliades V, Chatzilygeroudis K, Mouret JB. Using centroidal voronoi tessellations to scale up the multi-dimensional archive of phenotypic elites algorithm. IEEE Transactions on Evolutionary Computation. 2017 Aug 3.
+
+**Variation operator**: Vassiliades V, Mouret JB. Discovering the Elite Hypervolume by Leveraging Interspecies Correlation. Proc. of GECCO 2018.
 
 
 ## Installation
