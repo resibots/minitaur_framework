@@ -13,12 +13,12 @@ This framework contains everything needed to use [IT&E](https://github.com/resib
 
 You can see below a graphical overview of the framework :
 
-![framework](framework.jpg)
+![framework](miscs/framework.jpg)
 
 
 You can click on the GIF to watch the full IT&E minitaur video:
 
-[![](minitaur.gif)](https://www.youtube.com/watch?v=v90CWJ_HsnM)
+[![](miscs/minitaur.gif)](https://www.youtube.com/watch?v=v90CWJ_HsnM)
 
 
 
