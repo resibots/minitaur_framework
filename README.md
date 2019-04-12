@@ -2,13 +2,13 @@
 
 This framework contains everything needed to use [IT&E](https://github.com/resibots/ite_v2) and [Map-Elites](https://github.com/resibots/map_elites_hexapod) with the [minitaur](http://ghostrobotics.gitlab.io/SDK/Introduction.html) from ghost robotics. It includes the followings :
 
-* [minitaur_sdk](https://gitlab.inria.fr/resibots/minitaur_sdk.git) - The minitaur ghost robotics sdk with some custom examples to be able to read and send commands from ROS and though USB
+* [minitaur_sdk](https://github.com/resibots/minitaur_sdk.git) - The minitaur ghost robotics sdk with some custom examples to be able to read and send commands from ROS and though USB
 
-* [ros_pyminitaur](https://gitlab.inria.fr/resibots/ros_pyminitaur.git) - The ros package with everything needed to read maps created with Map Elites and send the commands to the minitaur through ros
+* [ros_pyminitaur](https://github.com/resibots/ros_pyminitaur.git) - The ros package with everything needed to read maps created with Map Elites and send the commands to the minitaur through ros
 
-* [pybullet_minitaur_sim](https://gitlab.inria.fr/resibots/pybullet_minitaur_sim) - This contains a pybullet minitaur simulation based on [this](https://github.com/bulletphysics/bullet3/tree/master/examples/pybullet/gym/pybullet_envs/minitaur/envs) github repository . The pybullet_minitaur_sim defines everything needed to run episodes and create maps with Map Elites.
+* [pybullet_minitaur_sim](https://github.com/resibots/pybullet_minitaur_sim.git) - This contains a pybullet minitaur simulation based on [this](https://github.com/bulletphysics/bullet3/tree/master/examples/pybullet/gym/pybullet_envs/minitaur/envs) github repository . The pybullet_minitaur_sim defines everything needed to run episodes and create maps with Map Elites.
 
-* [pyite](https://gitlab.inria.fr/resibots/pyite.git) - An IT&E implementation in python, it can be used with pybullet for simulation or with ros to send commands to the real robots. It is selecting the best behaviors in the maps created with Map Elites thanks to a bayesian optimization process
+* [pyite](https://github.com/resibots/pyite.git) - An IT&E implementation in python, it can be used with pybullet for simulation or with ros to send commands to the real robots. It is selecting the best behaviors in the maps created with Map Elites thanks to a bayesian optimization process
 
 
 You can see below a graphical overview of the framework :
@@ -118,7 +118,7 @@ sudo -s
 python command.py
 ```
 
-You should now be able to retrieve data from ros topics and send cartesian commands to the legs. For more details refer to the README.md of [minitaur_sdk](https://gitlab.inria.fr/resibots/minitaur_sdk.git)
+You should now be able to retrieve data from ros topics and send cartesian commands to the legs. For more details refer to the README.md of [minitaur_sdk](https://github.com/resibots/minitaur_sdk.git)
 
 Note that a safety limit has been implemented. If one motor is trying to use more than 25A for more than 1second, the motors will be disabled. The following framework will automatically enable the motors at each new episode.
 
@@ -137,7 +137,7 @@ rosrun pyminitaur cmd_minitaur_xy.py
 VRPN needs to be able to recover the minitaur position through the minitaur frame.
 The cmd_minitaur_xy node will wait for commands to run episodes on the real robot.
 
-cmd_minitaur_xy.py will allow you to run episodes with a specific duration. For more details please refer to the README.md of [ros_pyminitaur](https://gitlab.inria.fr/resibots/ros_pyminitaur.git)
+cmd_minitaur_xy.py will allow you to run episodes with a specific duration. For more details please refer to the README.md of [ros_pyminitaur](https://github.com/resibots/ros_pyminitaur.git)
 
 Note that you can use test_maps.py to test some behaviors but you can also use pyite as depicted in the following section
 
@@ -149,7 +149,7 @@ Go to the pyite folder and execute :
 python ite.py maps/minitaur/centroids_40000_16.dat maps/minitaur/archive_20000.dat 1 minitaur
 ```
 
- For more details please refer to the README.md of [pyite](https://gitlab.inria.fr/resibots/pyite.git)
+ For more details please refer to the README.md of [pyite](https://github.com/resibots/pyite.git)
 
 
 #### Instead of pyite you can also test maps
@@ -185,8 +185,8 @@ python test_maps.py path_to_folder_containing_maps
 
 If you want to test 10 maps you can use ite_final_test_maps.py
 
-For more details please refer to [ros_pyminitaur](https://gitlab.inria.fr/resibots/ros_pyminitaur.git)
+For more details please refer to [ros_pyminitaur](https://github.com/resibots/ros_pyminitaur.git)
 
 ## How create map_elites maps for the minitaur ?
 
-Go to the pybullet_minitaur_sim folder and refer to the README.md file [pybullet_minitaur_sim](https://gitlab.inria.fr/resibots/pybullet_minitaur_sim.git)
+Go to the pybullet_minitaur_sim folder and refer to the README.md file [pybullet_minitaur_sim](https://github.com/resibots/pybullet_minitaur_sim.git)
