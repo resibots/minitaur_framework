@@ -1,0 +1,12 @@
+[submodule "minitaur_sdk"]
+	path = minitaur_sdk
+	url = https://github.com/resibots/minitaur_sdk.git
+[submodule "pybullet_minitaur_sim"]
+	path = pybullet_minitaur_sim
+	url = https://github.com/resibots/pybullet_minitaur_sim.git
+[submodule "pyite"]
+	path = pyite
+	url = https://github.com/resibots/pyite.git
+[submodule "ros_pyminitaur"]
+	path = ros_pyminitaur
+	url = https://github.com/resibots/ros_pyminitaur.git
